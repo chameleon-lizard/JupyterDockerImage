@@ -40,7 +40,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - $HOME/jupyter-docker:/my_dir  # Changed volume mount for clarity
+      - $HOME/docker:/my_dir
       - ~/.cache/huggingface:/root/.cache/huggingface
     deploy:
       resources:
